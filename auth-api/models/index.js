@@ -14,6 +14,8 @@ let sequelizeOptions={
     }
   }
 };
+
+
 const DATABASE_URL = process.env.DATABASE_URL||'postgres://localhost:5432/user'
   // process.env.NODE_ENV == "test"
   //   ? "sqlite:memory"

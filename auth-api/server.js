@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.get('/',(req,res)=>{
-  res.send('The server is connected');
+  res.json('Is connected ')
 })
 app.use(authRoutes);
 app.use('/api/v1',v1);
