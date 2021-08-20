@@ -23,9 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.get('/',(req,res)=>{
-  res.json('Is connected ')
-})
+
 app.use(authRoutes);
 app.use('/api/v1',v1);
 app.use('/api/v2',v2);
